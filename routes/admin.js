@@ -154,7 +154,7 @@ router.get("/reservations", function (req, res, next){
 
 router.post("/reservations", function (req, res, next){
 
-    reservations.save(req.fields, req.files).then(results=>{
+    reservations.save(req.fields, req.files).then(results => {
 
         res.send(results);
 

@@ -17,7 +17,7 @@ module.exports = {
 
     save(fields){
 
-        return new Promise((resolve, reject)=> {
+        return new Promise((resolve, reject) => {
 
             if (fields.date.indexOf('/') > -1){
 
@@ -43,7 +43,7 @@ module.exports = {
                         email = ?,
                         people = ?,
                         date = ?,
-                        time = ?,
+                        time = ?
                     WHERE id = ?    
                 `;
 
