@@ -87,11 +87,11 @@ module.exports = {
 
         return new Promise((resolve, reject) => {
 
-            conn.query(`
+           conn.query(`
                DELETE FROM tb_menus WHERE id = ? 
            `, [
                 id
-            ], (err, results) => {
+           ], (err, results) => {
 
                 if (err) {
                     reject(err);
@@ -99,7 +99,7 @@ module.exports = {
                     resolve(results);
                 }
 
-            });
+           });
 
         });
     }
