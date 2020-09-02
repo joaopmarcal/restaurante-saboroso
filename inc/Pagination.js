@@ -87,7 +87,7 @@ class Pagination {
 
         if(this.getCurrentPage() > 1){
             links.push({
-               text:'<',
+               text:'«',
                href: '?' +  this.getQueryString(Object.assign({}, params,{page: this.getCurrentPage()-1}))
             });
         }
@@ -104,7 +104,7 @@ class Pagination {
 
         if(this.getCurrentPage() < this.getTotalPages()){
             links.push({
-                text:'>',
+                text:'»',
                 href: '?' +  this.getQueryString(Object.assign({}, params,{page: this.getCurrentPage()+1}))
             });
         }
